@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+			<script type="text/javascript">
+			var var1 = 10;//전역 변수= 전체에 영향을 미치는 변수
+			var2 =20;
+			//함수 선언  = 함수와 메소드는 다르다
+			function fun1(){
+				//로컬 변수
+				var var3 = 30;
+				
+				var4 = 40;
+				
+				console.log("var1:"+ var1);
+				console.log("var2:"+ var2);
+				console.log("var3:"+ var3);
+				console.log("var4:"+ var4);
+			}
+				function fun2(){
+					console.log("var1:"+ var1);
+					console.log("var2:"+ var2);
+					console.log("var4:"+ var4);
+					
+				}
+				fun1();
+				fun2();
+		
+			</script>
+	</head>
+	<body>
+
+	</body>
+</html>
